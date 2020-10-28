@@ -1,0 +1,74 @@
+{% load static %}
+<html>
+<head>
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <link rel="stylesheet" href="{% static 'userapp/css/style.css' %}">
+
+</head>
+<body>
+    <header>
+        <h1> Job Portal </h1>
+    </header>
+        <div class="navbar">
+            <a href="{% url 'home' %}">Home</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdowncomp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Company
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdowncomp">
+                    <a class="dropdown-item" href="{% url 'add_company' %}">Add Company</a>
+                    <a class="dropdown-item" href="{% url 'view_company' %}">View Company</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                 <button class="btn btn-secondary dropdown-toggle" type="button" id="job" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Jobs
+                </button>
+                <div class="dropdown-menu" aria-labelledby="job">
+                    <a class="dropdown-item" href="{% url 'add_job' %}">Add Jobs</a>
+                    <a class="dropdown-item" href="{% url 'view_job' %}">View Jobs</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="Candidate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Candidate
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Candidate">
+                    <a class="dropdown-item" href="{% url 'add_candidate' %}">Add Candidate</a>
+                    <a class="dropdown-item" href="{% url 'view_candidate' %}">View Candidate</a>
+
+                </div>
+            </div>
+            <a href="{% url 'register' %}">Register</a>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+<br>
+
+{% block content%}
+ <h1> Write Ur cde Here </h1>
+{% endblock %}
+
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<footer>
+    <h4> Copyright @ AR </h4>
+</footer>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

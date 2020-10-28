@@ -1,0 +1,28 @@
+{% extends "userapp/test.html" %}
+
+{% block title %}
+    <title> Jobs </title>
+{% endblock %}
+
+
+{% block content %}
+    <table class="table table-striped">
+        <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>City</th>
+            <th>Experience</th>
+        </tr>
+        {% for j in jobs %}
+        <tr>
+            <td>{{j.job_comp}}</td>
+            <td>{{j.job_profile}}</td>
+            <td>{{j.job_city}}</td>
+            <td>{{j.tot_exp}}</td>
+
+        </tr>
+        {% endfor %}
+
+    </table>
+{% endblock %}
+

@@ -1,0 +1,42 @@
+header h1 {
+    background-color: grey;
+    text-align : center;
+
+
+}
+.navbar
+{
+    background-color: grey;
+    list-style-type: none;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration:none;
+    color:white;
+    display:block;
+    padding : 15px 15px 15px 15px
+    }
+
+ a:hover
+ {
+ background-color: none
+ }
+
+.dropdown button {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+
+
+
+footer h3
+{
+    background-color: grey;
+    text-align : center;
+}

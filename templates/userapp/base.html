@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Title</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'userapp/css/test.css' %}">
+
+</head>
+<body>
+    <header>
+        <h1> Job Portal </h1>
+    </header>
+<!--        <ul class="my_navbar">-->
+<!--            <li><a href="#">Home</a> </li>-->
+<!--            <li><a href="#">About</a> </li>-->
+<!--            <li><a href="#">Contact</a> </li>-->
+<!--            <li><a href="{% url 'add_company' %}">Company</a> </li>-->
+<!--            <li><a href="{% url 'add_job' %}">Jobs</a> </li>-->
+<!--            <li><a href="{% url 'add_candidate' %}">Candidate</a> </li>-->
+
+<!--        </ul>-->
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+    <br>
+{% block content%}
+ <h1> Write Ur cde Here </h1>
+{% endblock %}
+
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+<footer>
+    <h3> Copyright @ AR </h3>
+</footer>
+</body>
+</html>

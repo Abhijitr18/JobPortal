@@ -1,0 +1,28 @@
+{% extends "userapp/test.html" %}
+
+{% block title %}
+    <title> Companies </title>
+{% endblock %}
+
+
+{% block content %}
+    <table class ="table table-striped">
+        <tr>
+            <th> Reg. No </th>
+            <th> Company </th>
+            <th> City </th>
+            <th> Category </th>
+        </tr>
+        {% for c in company %}
+        <tr>
+            <td>{{c.co_regno}}</td>
+            <td>{{c.co_name}}</td>
+            <td>{{c.co_city}}</td>
+            <td>{{c.co_category}}</td>
+            <td><a href="{% url 'updt' c.id %}" ><button class="btn btn-primary"> Update </button></a></td>
+        </tr>
+        {% endfor %}
+
+    </table>
+{% endblock %}
+

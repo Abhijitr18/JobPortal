@@ -1,0 +1,33 @@
+{% extends "userapp/test.html" %}
+
+{% block title %}
+    <title> Candidates </title>
+{% endblock %}
+
+
+{% block content %}
+    <table class="table table-striped">
+        <tr>
+            <th>Company</th>
+            <th>Job</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Email Id</th>
+            <th>Phone</th>
+        </tr>
+        {% for can in candidate %}
+        <tr>
+            <td>{{can.comp}}</td>
+            <td>{{can.job}}</td>
+            <td>{{can.name}}</td>
+            <td>{{can.gender}}</td>
+            <td>{{can.city}}</td>
+            <td>{{can.email}}</td>
+            <td>{{can.phone}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+{% endblock %}
+
